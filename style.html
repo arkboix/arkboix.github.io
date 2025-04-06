@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-04-06 Sun 17:12 -->
+<!-- 2025-04-06 Sun 16:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Arkboi's Blog</title>
-<meta name="author" content="Arkboi" />
+<title>&lrm;</title>
+<meta name="author" content="a" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -278,7 +278,7 @@ $('#' + divId).find('h3').each(function(i) {
 // &nbsp;, so get all the text.  (This fixes a bug in the
 // original code.)
 let text = null;
-let pos = $(this).text().search(/Â | âº/);
+let pos = $(this).text().search(/ | ►/);
 if (pos > 0) {
 text = $(this).text().substring(0, pos);
 }
@@ -487,7 +487,7 @@ $('li > code :contains("[-]")')
 .addClass('halfchecked')
 .end()
 .remove();
-$('li > code :contains("[Â ]")')
+$('li > code :contains("[ ]")')
 .parent()
 .addClass('unchecked')
 .end()
@@ -1089,237 +1089,10 @@ hsAddReviewPanels();
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Arkboi's Blog</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org660269a">1. Hello World</a>
-<ul>
-<li><a href="#org92ca5ed">1.1. Dark Mode</a></li>
-<li><a href="#org8cc9165">1.2. What I do here</a></li>
-</ul>
-</li>
-<li><a href="#org288085b">2. Whats Bad About: Hyprland</a>
-<ul>
-<li><a href="#orga20fc20">2.1. Hyprland is slow.</a></li>
-<li><a href="#org3e65613">2.2. Alternatives</a></li>
-<li><a href="#orgd7efb57">2.3. Conclusion</a></li>
-</ul>
-</li>
-<li><a href="#org3d17079">3. What's Bad About: Ubuntu</a>
-<ul>
-<li><a href="#org52af366">3.1. Spyware</a></li>
-<li><a href="#org0139ea9">3.2. "C sucks"</a></li>
-<li><a href="#org4eed6e7">3.3. Bloat</a></li>
-<li><a href="#org963f02f">3.4. Conclusion</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org660269a" class="outline-2">
-<h2 id="org660269a"><span class="section-number-2">1.</span> Hello World</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Writing a blog in org mode is the most emacs i can get, You get to suffer HTML, CSS and JS BS in VSCODE while I
-get to enjoy writing notes in "markdown but with serious steroids" and convert it into a site.
-</p>
-</div>
-<div id="outline-container-org92ca5ed" class="outline-3">
-<h3 id="org92ca5ed"><span class="section-number-3">1.1.</span> Dark Mode</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-The site does have a dark mode, it is using the Retro Dark org theme. (<a href="https://gitlab.com/OlMon/org-themes/-/blob/master/src/retro_dark/retro_dark.theme">https://gitlab.com/OlMon/org-themes/-/blob/master/src/retro_dark/retro_dark.theme</a>)
-</p>
-</div>
-</div>
-<div id="outline-container-org8cc9165" class="outline-3">
-<h3 id="org8cc9165"><span class="section-number-3">1.2.</span> What I do here</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-This site will probably be filled with lots and lots of rants. So have fun!
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org288085b" class="outline-2">
-<h2 id="org288085b"><span class="section-number-2">2.</span> Whats Bad About: Hyprland</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Hyprland, a Wayland compositor is just simply bad.
-</p>
-
-<p>
-There is an alternative with all it's features but minus the drama that comes along with Hyprland.
-</p>
-
-<p>
-Have a quick read through this:
-</p>
-
-<p>
-<a href="https://rentry.co/Hyprland-controversy">https://rentry.co/Hyprland-controversy</a>
-</p>
-
-<p>
-as well as Drew's blog about it:
-</p>
-
-<p>
-<a href="https://drewdevault.com/2023/09/17/Hyprland-toxicity.html">https://drewdevault.com/2023/09/17/Hyprland-toxicity.html</a>
-</p>
-
-<p>
-This is all about the Hyprland lead developer vaxry and the Hyprland community.
-</p>
-</div>
-<div id="outline-container-orga20fc20" class="outline-3">
-<h3 id="orga20fc20"><span class="section-number-3">2.1.</span> Hyprland is slow.</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-It has performed really, and I mean really bad on my computer, and sometimes gets in this state
-where its unusable, you have to reboot
-</p>
-
-<p>
-and if a program forces me to reboot, im running it over
-</p>
-
-<div class="org-src-container">
-<pre class="src src-bash">sudo pacman -Runs hyprland
-</pre>
-</div>
-</div>
-</div>
-<div id="outline-container-org3e65613" class="outline-3">
-<h3 id="org3e65613"><span class="section-number-3">2.2.</span> Alternatives</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-The best alternative to hyprland is:
-</p>
-
-<p>
-<a href="https://github.com/nferhat/fht-compositor">https://github.com/nferhat/fht-compositor</a>
-</p>
-
-<p>
-the fht compositor has all your eye candy features, without any drama, and it runs well.
-</p>
-
-<p>
-It's also worth considering:
-</p>
-
-<ul class="org-ul">
-<li>Niri (<a href="https://github.com/YaLTeR/niri">https://github.com/YaLTeR/niri</a>) (The one I use, a scrollable Wayland compositor.)</li>
-
-<li>River (<a href="https://isaacfreund.com/software/river/">https://isaacfreund.com/software/river/</a>) (Similar to DWM, Xmonad, etc)</li>
-
-<li>Sway (<a href="https://swaywm.org">https://swaywm.org</a>) (i3 compatible Wayland compositor)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgd7efb57" class="outline-3">
-<h3 id="orgd7efb57"><span class="section-number-3">2.3.</span> Conclusion</h3>
-<div class="outline-text-3" id="text-2-3">
-<p>
-Do not use Hyprland, if you ever shilled it, make an apology
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org3d17079" class="outline-2">
-<h2 id="org3d17079"><span class="section-number-2">3.</span> What's Bad About: Ubuntu</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-Ubuntu is a huge mess made by Canonical.
-</p>
-
-<p>
-It started out as a nice and unique distro and grew out to be a:
-</p>
-
-<ul class="org-ul">
-<li>Pointless</li>
-<li>Slow</li>
-<li>Spyware</li>
-<li>Bloated</li>
-</ul>
-</div>
-<div id="outline-container-org52af366" class="outline-3">
-<h3 id="org52af366"><span class="section-number-3">3.1.</span> Spyware</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-Yes, Ubuntu is spyware. Not only does it come with spyware apps that bloat it,
-it also stores up everything, stuff that you search etc.
-</p>
-
-<p>
-Ubuntu has turned into Microsoft Windows
-</p>
-
-<p>
-What else do you expect from a distro made by a corporation haha, (I'm talking about you, RHEL)
-</p>
-</div>
-</div>
-<div id="outline-container-org0139ea9" class="outline-3">
-<h3 id="org0139ea9"><span class="section-number-3">3.2.</span> "C sucks"</h3>
-<div class="outline-text-3" id="text-3-2">
-<p>
-It's also recently stripped out GNU coreutils and replaced it with uutils written in Rust.
-Maybe this is to avoid getting boo'ed by stallman? Or is Rust all what people are into these days?
-</p>
-
-<p>
-The problem with this change is that, they just replaced the coreutils, and there are programs that depend
-on certain GNU Coreutils specific things that are just not gonna work!
-</p>
-
-<p>
-So you really need to think things out before making stupid changes!
-</p>
-</div>
-</div>
-<div id="outline-container-org4eed6e7" class="outline-3">
-<h3 id="org4eed6e7"><span class="section-number-3">3.3.</span> Bloat</h3>
-<div class="outline-text-3" id="text-3-3">
-<p>
-Snap. A useless thing that Canonical forces into the Ubuntu uutils/Linux distro.
-</p>
-
-<p>
-Snap programs are slow, and snap is pointless
-</p>
-
-<p>
-Flatpaks have gotten way better, plus, why would you replace a system package like firefox with
-a snap equivalent!??
-</p>
-
-<p>
-As I mentioned before, It comes with many bloated apps, that i,
-</p>
-
-<p>
-DID NOT ASK FOR.
-</p>
-</div>
-</div>
-<div id="outline-container-org963f02f" class="outline-3">
-<h3 id="org963f02f"><span class="section-number-3">3.4.</span> Conclusion</h3>
-<div class="outline-text-3" id="text-3-4">
-<p>
-Never recommend Ubuntu to anyone, only recommend the font.
-</p>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Arkboi</p>
-<p class="date">Created: 2025-04-06 Sun 17:12</p>
+<p class="author">Author: a</p>
+<p class="date">Created: 2025-04-06 Sun 16:56</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

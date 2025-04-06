@@ -63,3 +63,53 @@ It's also worth considering:
 ** Conclusion
 
 Do not use Hyprland, if you ever shilled it, make an apology
+
+* What's Bad About: Ubuntu
+
+Ubuntu is a huge mess made by Canonical.
+
+It started out as a nice and unique distro and grew out to be a:
+
+- Pointless
+- Slow
+- Spyware
+- Bloated
+
+** Spyware
+
+Yes, Ubuntu is spyware. Not only does it come with spyware apps that bloat it,
+it also stores up everything, stuff that you search etc.
+
+Ubuntu has turned into Microsoft Windows
+
+What else do you expect from a distro made by a corporation haha, (I'm talking about you, RHEL)
+
+** "C sucks"
+
+It's also recently stripped out GNU coreutils and replaced it with uutils written in Rust.
+Maybe this is to avoid getting boo'ed by stallman? Or is Rust all what people are into these days?
+
+The problem with this change is that, they just replaced the coreutils, and there are programs that depend
+on certain GNU Coreutils specific things that are just not gonna work!
+
+So you really need to think things out before making stupid changes!
+
+** Bloat
+
+
+Snap. A useless thing that Canonical forces into the Ubuntu uutils/Linux distro.
+
+Snap programs are slow, and snap is pointless
+
+Flatpaks have gotten way better, plus, why would you replace a system package like firefox with
+a snap equivalent!??
+
+As I mentioned before, It comes with many bloated apps, that i,
+
+DID NOT ASK FOR.
+
+** Conclusion
+
+Never recommend Ubuntu to anyone, only recommend the font.
+
+
