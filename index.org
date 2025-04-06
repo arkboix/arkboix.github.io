@@ -9,7 +9,7 @@ get to enjoy writing notes in "markdown but with serious steroids" and convert i
 
 ** Dark Mode
 
-The site does have a dark mode, it is using the Retro Dark org theme. (https://gitlab.com/OlMon/org-themes/-/blob/master/src/retro_dark/retro_dark.theme)
+The site does have a dark mode, it is using the Darksun org theme. (https://gitlab.com/OlMon/org-themes/-/blob/master/src/darksun/darksun.theme)
 
 ** What I do here
 
