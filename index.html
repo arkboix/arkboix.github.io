@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-04-06 Sun 17:14 -->
+<!-- 2025-04-06 Sun 21:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arkboi's Blog</title>
@@ -1086,6 +1086,38 @@ nbReviewTotalTasks = $('.outline-2 span.todo').length;
 hsAddReviewPanels();
 });
 </script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -1094,48 +1126,66 @@ hsAddReviewPanels();
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org2e924bc">1. Hello World</a>
+<li><a href="#org1641de1">1. Hello World</a>
 <ul>
-<li><a href="#org8b1d2e8">1.1. Dark Mode</a></li>
-<li><a href="#orgdbf05b3">1.2. What I do here</a></li>
+<li><a href="#orga1e251a">1.1. Dark Mode</a></li>
+<li><a href="#org4f52839">1.2. What I do here</a></li>
 </ul>
 </li>
-<li><a href="#orge80807e">2. Whats Bad About: Hyprland</a>
+<li><a href="#org48bb332">2. Whats Bad About: Hyprland</a>
 <ul>
-<li><a href="#org6977a16">2.1. Hyprland is slow.</a></li>
-<li><a href="#orgee61be4">2.2. Alternatives</a></li>
-<li><a href="#org92eae35">2.3. Conclusion</a></li>
+<li><a href="#orgc607291">2.1. Hyprland is slow.</a></li>
+<li><a href="#orgbe640fe">2.2. Alternatives</a></li>
+<li><a href="#org4aa9528">2.3. Conclusion</a></li>
 </ul>
 </li>
-<li><a href="#orged448fa">3. What's Bad About: Ubuntu</a>
+<li><a href="#org7fc3589">3. What's Bad About: Ubuntu</a>
 <ul>
-<li><a href="#orgd017eb4">3.1. Spyware</a></li>
-<li><a href="#org570c232">3.2. "C sucks"</a></li>
-<li><a href="#orga5e1213">3.3. Bloat</a></li>
-<li><a href="#orga4d1c02">3.4. Conclusion</a></li>
+<li><a href="#orgb3266fd">3.1. Spyware</a></li>
+<li><a href="#org4020324">3.2. "C sucks"</a></li>
+<li><a href="#orga574c23">3.3. Bloat</a></li>
+<li><a href="#org2d2db03">3.4. Conclusion</a></li>
+</ul>
+</li>
+<li><a href="#orgc9dde67">4. Bash is based</a>
+<ul>
+<li><a href="#org0763d33">4.1. What's Bash</a></li>
+<li><a href="#org664cc6f">4.2. The cool thing about bash</a></li>
+<li><a href="#org515520c">4.3. Basic Bash Things</a>
+<ul>
+<li><a href="#org42fec72">4.3.1. Functions</a></li>
+<li><a href="#orgdec0ab4">4.3.2. Variables</a></li>
+<li><a href="#orgeb16e89">4.3.3. Redirect Stuff</a></li>
+</ul>
+</li>
+<li><a href="#org43058ba">4.4. Conclusion</a>
+<ul>
+<li><a href="#orge972113">4.4.1. Bash is easy.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2e924bc" class="outline-2">
-<h2 id="org2e924bc"><span class="section-number-2">1.</span> Hello World</h2>
+<div id="outline-container-org1641de1" class="outline-2">
+<h2 id="org1641de1"><span class="section-number-2">1.</span> Hello World</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Writing a blog in org mode is the most emacs i can get, You get to suffer HTML, CSS and JS BS in VSCODE while I
 get to enjoy writing notes in "markdown but with serious steroids" and convert it into a site.
 </p>
 </div>
-<div id="outline-container-org8b1d2e8" class="outline-3">
-<h3 id="org8b1d2e8"><span class="section-number-3">1.1.</span> Dark Mode</h3>
+<div id="outline-container-orga1e251a" class="outline-3">
+<h3 id="orga1e251a"><span class="section-number-3">1.1.</span> Dark Mode</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The site does have a dark mode, it is using the Darksun org theme. (<a href="https://gitlab.com/OlMon/org-themes/-/blob/master/src/darksun/darksun.theme">https://gitlab.com/OlMon/org-themes/-/blob/master/src/darksun/darksun.theme</a>)
 </p>
 </div>
 </div>
-<div id="outline-container-orgdbf05b3" class="outline-3">
-<h3 id="orgdbf05b3"><span class="section-number-3">1.2.</span> What I do here</h3>
+<div id="outline-container-org4f52839" class="outline-3">
+<h3 id="org4f52839"><span class="section-number-3">1.2.</span> What I do here</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 This site will probably be filled with lots and lots of rants. So have fun!
@@ -1143,8 +1193,8 @@ This site will probably be filled with lots and lots of rants. So have fun!
 </div>
 </div>
 </div>
-<div id="outline-container-orge80807e" class="outline-2">
-<h2 id="orge80807e"><span class="section-number-2">2.</span> Whats Bad About: Hyprland</h2>
+<div id="outline-container-org48bb332" class="outline-2">
+<h2 id="org48bb332"><span class="section-number-2">2.</span> Whats Bad About: Hyprland</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Hyprland, a Wayland compositor is just simply bad.
@@ -1174,8 +1224,8 @@ as well as Drew's blog about it:
 This is all about the Hyprland lead developer vaxry and the Hyprland community.
 </p>
 </div>
-<div id="outline-container-org6977a16" class="outline-3">
-<h3 id="org6977a16"><span class="section-number-3">2.1.</span> Hyprland is slow.</h3>
+<div id="outline-container-orgc607291" class="outline-3">
+<h3 id="orgc607291"><span class="section-number-3">2.1.</span> Hyprland is slow.</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 It has performed really, and I mean really bad on my computer, and sometimes gets in this state
@@ -1192,8 +1242,8 @@ and if a program forces me to reboot, im running it over
 </div>
 </div>
 </div>
-<div id="outline-container-orgee61be4" class="outline-3">
-<h3 id="orgee61be4"><span class="section-number-3">2.2.</span> Alternatives</h3>
+<div id="outline-container-orgbe640fe" class="outline-3">
+<h3 id="orgbe640fe"><span class="section-number-3">2.2.</span> Alternatives</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 The best alternative to hyprland is:
@@ -1220,8 +1270,8 @@ It's also worth considering:
 </ul>
 </div>
 </div>
-<div id="outline-container-org92eae35" class="outline-3">
-<h3 id="org92eae35"><span class="section-number-3">2.3.</span> Conclusion</h3>
+<div id="outline-container-org4aa9528" class="outline-3">
+<h3 id="org4aa9528"><span class="section-number-3">2.3.</span> Conclusion</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Do not use Hyprland, if you ever shilled it, make an apology
@@ -1229,8 +1279,8 @@ Do not use Hyprland, if you ever shilled it, make an apology
 </div>
 </div>
 </div>
-<div id="outline-container-orged448fa" class="outline-2">
-<h2 id="orged448fa"><span class="section-number-2">3.</span> What's Bad About: Ubuntu</h2>
+<div id="outline-container-org7fc3589" class="outline-2">
+<h2 id="org7fc3589"><span class="section-number-2">3.</span> What's Bad About: Ubuntu</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Ubuntu is a huge mess made by Canonical.
@@ -1247,8 +1297,8 @@ It started out as a nice and unique distro and grew out to be a:
 <li>Bloated</li>
 </ul>
 </div>
-<div id="outline-container-orgd017eb4" class="outline-3">
-<h3 id="orgd017eb4"><span class="section-number-3">3.1.</span> Spyware</h3>
+<div id="outline-container-orgb3266fd" class="outline-3">
+<h3 id="orgb3266fd"><span class="section-number-3">3.1.</span> Spyware</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Yes, Ubuntu is spyware. Not only does it come with spyware apps that bloat it,
@@ -1264,8 +1314,8 @@ What else do you expect from a distro made by a corporation haha, (I'm talking a
 </p>
 </div>
 </div>
-<div id="outline-container-org570c232" class="outline-3">
-<h3 id="org570c232"><span class="section-number-3">3.2.</span> "C sucks"</h3>
+<div id="outline-container-org4020324" class="outline-3">
+<h3 id="org4020324"><span class="section-number-3">3.2.</span> "C sucks"</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 It's also recently stripped out GNU coreutils and replaced it with uutils written in Rust.
@@ -1282,8 +1332,8 @@ So you really need to think things out before making stupid changes!
 </p>
 </div>
 </div>
-<div id="outline-container-orga5e1213" class="outline-3">
-<h3 id="orga5e1213"><span class="section-number-3">3.3.</span> Bloat</h3>
+<div id="outline-container-orga574c23" class="outline-3">
+<h3 id="orga574c23"><span class="section-number-3">3.3.</span> Bloat</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Snap. A useless thing that Canonical forces into the Ubuntu uutils/Linux distro.
@@ -1307,8 +1357,8 @@ DID NOT ASK FOR.
 </p>
 </div>
 </div>
-<div id="outline-container-orga4d1c02" class="outline-3">
-<h3 id="orga4d1c02"><span class="section-number-3">3.4.</span> Conclusion</h3>
+<div id="outline-container-org2d2db03" class="outline-3">
+<h3 id="org2d2db03"><span class="section-number-3">3.4.</span> Conclusion</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 Never recommend Ubuntu to anyone, only recommend the font.
@@ -1316,10 +1366,181 @@ Never recommend Ubuntu to anyone, only recommend the font.
 </div>
 </div>
 </div>
+<div id="outline-container-orgc9dde67" class="outline-2">
+<h2 id="orgc9dde67"><span class="section-number-2">4.</span> Bash is based</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+It may come to your surprise that I am NOT a programmer.
+I don't know C, see pee pee, python snake, or rusty socks.
+</p>
+
+<p>
+What I do know is Linux and I know very well about it.
+The only "language" I have ever learned is Bash. If you consider that a language. 
+</p>
+</div>
+<div id="outline-container-org0763d33" class="outline-3">
+<h3 id="org0763d33"><span class="section-number-3">4.1.</span> What's Bash</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Bash (Bourne Again Shell) is a shell and it's the default on many many Linux distros.
+It can also be used a scripting language, and that's what we are talking about today.
+</p>
+</div>
+</div>
+<div id="outline-container-org664cc6f" class="outline-3">
+<h3 id="org664cc6f"><span class="section-number-3">4.2.</span> The cool thing about bash</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+When you run bash in a terminal you can type in any sort of bash scripting thing and it will work, for example
+here is an array in bash:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">
+list=(
+    "orange"
+    "apple"
+    "banana"
+)
+
+echo "The second item in the list is ${list[1]}"
+</pre>
+</div>
+
+<p>
+This will add an array with three items, then we echo the second item in the list. (this is what the [1] does, [0] would be the first item hence [1]
+is the second item.)
+</p>
+</div>
+</div>
+<div id="outline-container-org515520c" class="outline-3">
+<h3 id="org515520c"><span class="section-number-3">4.3.</span> Basic Bash Things</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org42fec72" class="outline-4">
+<h4 id="org42fec72"><span class="section-number-4">4.3.1.</span> Functions</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<div class="org-src-container">
+<pre class="src src-bash">
+# Define our function
+my_function(){
+    echo "This command is inside a function"
+}
+
+# Call our function
+my_function
+
+</pre>
+</div>
+
+<p>
+it's as simple as that.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdec0ab4" class="outline-4">
+<h4 id="orgdec0ab4"><span class="section-number-4">4.3.2.</span> Variables</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<div class="org-src-container">
+<pre class="src src-bash">
+# Define a Variable
+var="foo"
+
+# Use our variable
+echo "$var 123"
+
+</pre>
+</div>
+
+<p>
+this will output it as "foo 123"
+</p>
+</div>
+</div>
+<div id="outline-container-orgeb16e89" class="outline-4">
+<h4 id="orgeb16e89"><span class="section-number-4">4.3.3.</span> Redirect Stuff</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<div class="org-src-container">
+<pre class="src src-bash"># Create a file
+touch ~/file.txt
+
+# Redirect the output of one command into the file
+echo "Hi!" &gt; ~/file.txt
+
+# Create another file
+touch ~/file-2.txt
+
+# Redirect the output of file.txt into file-2.txt
+cat ~/file.txt &gt; ~/file-2.txt
+
+# Add More stuff to file-2.txt
+echo -e "\nMore stuff!" &gt;&gt; ~/file-2.txt
+</pre>
+</div>
+
+<p>
+Let's break this down,
+</p>
+
+<p>
+the <b><b>touch</b></b> command here is used to create a file, then we redirect the output of:
+</p>
+
+<p>
+echo "Hi!"
+</p>
+
+<p>
+into file.txt with the &gt; symbol.
+</p>
+
+<p>
+Then we create another file, we do the same redirection method where the output of a command goes into a file,
+in this case the command being <b>cat ~/file.txt</b> which will output everything in ~/file.txt
+</p>
+
+<p>
+Then to add more stuff we use two (&gt;&gt;) symbols to <b>add</b> to the file instead of <b>override</b>, with the command being:
+</p>
+
+<p>
+<b>echo -e "\nMore stuff!"</b>
+</p>
+
+<p>
+the -e flag is used so that the \n becomes a new line, so the contents of file.txt would be:
+</p>
+
+<p>
+Hi!
+</p>
+
+<p>
+More stuff!
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org43058ba" class="outline-3">
+<h3 id="org43058ba"><span class="section-number-3">4.4.</span> Conclusion</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-orge972113" class="outline-4">
+<h4 id="orge972113"><span class="section-number-4">4.4.1.</span> Bash is easy.</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<p>
+I think you get the point, it's easy, it's straightforward, and you can use it for a lot of things.
+<b>Bash is based</b>
+</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Arkboi</p>
-<p class="date">Created: 2025-04-06 Sun 17:14</p>
+<p class="date">Created: 2025-04-06 Sun 21:19</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

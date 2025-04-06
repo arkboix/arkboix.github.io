@@ -113,3 +113,116 @@ DID NOT ASK FOR.
 Never recommend Ubuntu to anyone, only recommend the font.
 
 
+* Bash is based
+
+
+It may come to your surprise that I am NOT a programmer.
+I don't know C, see pee pee, python snake, or rusty socks.
+
+What I do know is Linux and I know very well about it.
+The only "language" I have ever learned is Bash. If you consider that a language. 
+
+** What's Bash
+
+Bash (Bourne Again Shell) is a shell and it's the default on many many Linux distros.
+It can also be used a scripting language, and that's what we are talking about today.
+
+** The cool thing about bash
+
+When you run bash in a terminal you can type in any sort of bash scripting thing and it will work, for example
+here is an array in bash:
+
+#+begin_src bash
+
+  list=(
+      "orange"
+      "apple"
+      "banana"
+  )
+
+  echo "The second item in the list is ${list[1]}"
+#+end_src
+
+This will add an array with three items, then we echo the second item in the list. (this is what the [1] does, [0] would be the first item hence [1]
+is the second item.)
+
+** Basic Bash Things
+
+*** Functions
+
+#+begin_src bash
+
+  # Define our function
+  my_function(){
+      echo "This command is inside a function"
+  }
+
+  # Call our function
+  my_function
+    
+#+end_src
+
+it's as simple as that.
+
+
+*** Variables
+
+#+begin_src bash
+
+  # Define a Variable
+  var="foo"
+
+  # Use our variable
+  echo "$var 123"
+    
+#+end_src
+
+this will output it as "foo 123"
+
+*** Redirect Stuff
+
+#+begin_src bash
+  # Create a file
+  touch ~/file.txt
+
+  # Redirect the output of one command into the file
+  echo "Hi!" > ~/file.txt
+
+  # Create another file
+  touch ~/file-2.txt
+
+  # Redirect the output of file.txt into file-2.txt
+  cat ~/file.txt > ~/file-2.txt
+
+  # Add More stuff to file-2.txt
+  echo -e "\nMore stuff!" >> ~/file-2.txt
+#+end_src
+
+Let's break this down,
+
+the **touch** command here is used to create a file, then we redirect the output of:
+
+echo "Hi!"
+
+into file.txt with the > symbol.
+
+Then we create another file, we do the same redirection method where the output of a command goes into a file,
+in this case the command being *cat ~/file.txt* which will output everything in ~/file.txt
+
+Then to add more stuff we use two (>>) symbols to *add* to the file instead of *override*, with the command being:
+
+*echo -e "\nMore stuff!"*
+
+the -e flag is used so that the \n becomes a new line, so the contents of file.txt would be:
+
+Hi!
+
+More stuff!
+
+** Conclusion
+
+
+*** Bash is easy.
+
+I think you get the point, it's easy, it's straightforward, and you can use it for a lot of things.
+*Bash is based*
