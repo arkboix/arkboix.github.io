@@ -1,0 +1,65 @@
+#+TITLE: Arkboi's Blog
+#+AUTHOR: Arkboi
+#+SETUPFILE: style.theme
+
+* Hello World
+
+Writing a blog in org mode is the most emacs i can get, You get to suffer HTML, CSS and JS BS in VSCODE while I
+get to enjoy writing notes in "markdown but with serious steroids" and convert it into a site.
+
+** Dark Mode
+
+The site does have a dark mode, it is using the Retro Dark org theme. (https://gitlab.com/OlMon/org-themes/-/blob/master/src/retro_dark/retro_dark.theme)
+
+** What I do here
+
+This site will probably be filled with lots and lots of rants. So have fun!
+
+
+* Whats Bad About: Hyprland
+
+Hyprland, a Wayland compositor is just simply bad.
+
+There is an alternative with all it's features but minus the drama that comes along with Hyprland.
+
+Have a quick read through this:
+
+https://rentry.co/Hyprland-controversy
+
+as well as Drew's blog about it:
+
+https://drewdevault.com/2023/09/17/Hyprland-toxicity.html
+
+This is all about the Hyprland lead developer vaxry and the Hyprland community.
+
+** Hyprland is slow.
+
+It has performed really, and I mean really bad on my computer, and sometimes gets in this state
+where its unusable, you have to reboot
+
+and if a program forces me to reboot, im running it over
+
+#+begin_src bash
+sudo pacman -Runs hyprland
+#+end_src
+
+** Alternatives
+
+The best alternative to hyprland is:
+
+https://github.com/nferhat/fht-compositor
+
+the fht compositor has all your eye candy features, without any drama, and it runs well.
+
+It's also worth considering:
+
+- Niri (https://github.com/YaLTeR/niri) (The one I use, a scrollable Wayland compositor.)
+
+- River (https://isaacfreund.com/software/river/) (Similar to DWM, Xmonad, etc)
+
+- Sway (https://swaywm.org) (i3 compatible Wayland compositor)
+
+
+** Conclusion
+
+Do not use Hyprland, if you ever shilled it, make an apology
