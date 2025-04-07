@@ -226,3 +226,44 @@ More stuff!
 
 I think you get the point, it's easy, it's straightforward, and you can use it for a lot of things.
 *Bash is based*
+
+
+* "Emacs vs Vim" is not valid
+
+
+The age old "Emacs or Vim" question is not valid and is very much pointless. Emacs is not a replacement to vim
+but rather a replacement to everything, all the tools you use for stuff like programming.
+
+** Emacs can be compared to... what?
+
+
+Any sort of IDE out there, Emacs can be compared to an IDE, not vim. Emacs vs Vscode is a valid question,
+because Emacs is not a text editor. It's a whole operating system.
+
+** Vim
+
+Vim can be used as is out of the box and looks good, since it uses whatever your termnal uses.
+Same philosophy does not apply for emacs.
+
+Just launch a default emacs session (*emacs --init-dir /tmp*) and see how ugly and unusable it is.
+It is possible to use default emacs, that's what I used to configure emacs.
+
+#+BEGIN_QUOTE
+I did not configure emacs in vim or neovim, I did it in vanilla emacs, I can approve the pinky hurts a bit.
+#+END_QUOTE
+
+So, emacs is insanely extensible where vim is meant to be lightweight, usable out of the box and still sort-of
+hackable.
+
+** Emacs with LSP mode
+
+Emacs with a thing called lsp-mode is basically an IDE, it has all of your IDE features and I use it!
+It can be very very ideal for programming since that's what YOU USE IDEs FOR
+
+** Conclusion
+
+The Vim vs Emacs question is invalid, vim has it's traits and use cases while emacs is a completely different
+program, not an alternative
+
+
+Emacs is great, so is Vim. Can we end the rant all together?
