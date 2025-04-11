@@ -9,7 +9,7 @@ get to enjoy writing notes in "markdown but with serious steroids" and convert i
 
 ** Dark Mode
 
-The site does have a dark mode, it is using the Darksun org theme. (https://gitlab.com/OlMon/org-themes/-/blob/master/src/darksun/darksun.theme)
+The site does have a dark mode, it is using the DarkSun org theme. (https://gitlab.com/OlMon/org-themes/-/blob/master/src/darksun/darksun.theme)
 
 ** What I do here
 
@@ -267,3 +267,39 @@ program, not an alternative
 
 
 Emacs is great, so is Vim. Can we end the rant all together?
+
+* Emacs startup times: Do those matter?
+
+** Complaints
+
+I've seen so many neotards say "Emacs starts up slow, it's bad!".
+
+But does it matter?
+
+** Emacs Users
+
+"Us emacs users" don't use *emacs*, we use *emacs client*.
+
+Most emacs users add the *emacs --daemon* command to their autostart config and then start their
+emacs windows with the *emacsclient -c* command (-c for "New Window", otherwise it will try to open in existing clients)
+
+This results in startup times such as *0.646264 seconds WITH 46 packages loaded*
+
+remember, that ain't vanilla Emacs that's Emacs with 46 packages / plugins.
+
+
+compare that to.. some vim distro with a handful of packages *SpaceVim*, aka the only vim distro other than spf13's one,
+which takes.. "not at all tested but feels like longer than 0.646264" sorta seconds ;)
+
+** Client windows
+
+it doesnt matter that much, since emacs users usually have one emacs window to edit everything, usually more emacs windows
+are not even opened in the first place
+
+The clients are also this "intelligent" thing where the daemon stores everything, so if you close the client and open it again
+you can just get right back at wherever you left off.. *as long as you didn't kill the daemon in the process*
+
+** Conclusion
+
+No. It does not matter. Emacs has the client to start emacs as quick as possible, 99.99999% of Emacs users use the client
+and those neotards don't know it yet
