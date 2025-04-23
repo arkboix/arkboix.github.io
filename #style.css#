@@ -82,18 +82,3 @@ ul li a:hover {
   color: #fff;                /* Change link color on hover */
   text-decoration: underline; /* Underline on hover */
 }
-
-pre {
-  background-color: #101610;
-  color: #c6e7af;
-  padding: 1rem;
-  overflow-x: auto;
-  font-family: monospace;
-  font-size: 0.9rem;
-  border-left: 4px solid #8eb373; /* replaced from #bd9764 */
-}
-
-code {
-  font-family: monospace;
-  color: #e0ffd6;
-}

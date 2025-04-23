@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Based Screen Recorders - Arkboi's Site</title>
+</head>
+<body>
+  <header style="text-align: center;">
+    <h1>Based Screen Recorders for Xorg and Wayland</h1>
+    <p><a href="../index.html">← Back to main site</a></p>
+    <p>Published on: Wednesday 23 April 2025 12:16:21 PM IST</p>
+  </header>
+
+  <main style="max-width: 800px; margin: auto;">
+    <article>
+      <h2>Introduction</h2>
+      <p>
+        Most normies use OBS Studio as a screen recorder. And that's fine, it's a great program. But for us minimalist zoomers, OBS is way too much bloat. 
+        After dumpster diving I have found the based screen recorders, for Xorg and Wayland.
+      </p>
+
+      <h2>Why Am I Making This?</h2>
+      <p>
+        It's simple — lots of people can't get OBS working. OBS is laggy, bloated, and just bad. 
+        With these minimalist screen recorders, however, you can have some shell scripting fun and a fast screen recording experience.
+      </p>
+
+      <h2>Xorg - FFMPEG</h2>
+      <p>
+        Probably the best screen recording tool ever, because it's more than just a screen recorder. You can do all sorts of stuff with ffmpeg and tweak every little thing.
+        I'm even pretty sure OBS is just a GUI wrapper for ffmpeg :) It’s fast, minimal, and “Just Works.”
+        You’d combine it with <code>x11grab</code> to get your screen capture. For FFMPEG, scripting is necessary to get things working properly. 
+        You can even pop up a webcam window with ffmpeg if you want to!
+      </p>
+
+      <h2>Wayland - wl-screenrec</h2>
+      <p>
+        I just recently came across this one. It's written in Rust (I don’t mind the language—except when it’s Python). 
+        It uses GPU hardware acceleration too. It works without a script, but scripting it is the ideal way to use it. 
+        Here’s the script I’m using:
+      </p>
+
+      <h4 style="font-family: monospace;">wl-screenrec script:</h4>
+      <pre><code>
+#!/usr/bin/env bash
+
+set -e  # Stop on error
+
+echo "Starting Screen Record"
+echo "Press Ctrl+C to stop recording..."
+
+timestamp="$(date +"recording-%Y-%m-%d-%H-%M-%S")"
+output="${timestamp}.mp4"
+final_output="${timestamp}-final.mp4"
+
+# Start recording
+wl-screenrec --audio --filename "$output"
+
+# Boost audio
+ffmpeg -i "$output" -filter:a "volume=3dB" "$final_output"
+
+# Clean up original
+rm "$output"
+
+echo "Done. Output saved as $final_output"
+</code></pre>
+
+      <h2>Conclusion</h2>
+      <p>
+        Do not use OBS — use these minimalist, based programs instead!
+      </p>
+    </article>
+  </main>
+
+  <footer style="text-align: center; margin-top: 2rem;">
+    <p>Made with love and simplicity.</p>
+  </footer>
+</body>
+</html>
