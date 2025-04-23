@@ -1,0 +1,84 @@
+/* Basic Body Styling */
+body {
+  font-family: serif;         /* Elegant serif font */
+  font-size: 16pt;            /* Readable font size */
+  background-color: #0b1008; /* Deep dark green background */
+  color: #b4d69d;             /* Light green text */
+  line-height: 1.6;           /* More line spacing for readability */
+  margin: 0;                  /* Remove default margin */
+  padding: 0;                 /* Remove default padding */
+  overflow-x: hidden;         /* Prevent horizontal scroll */
+  text-align: left;           /* Align text to the left */
+}
+
+/* Header Styling */
+header {
+  padding: 1rem;
+  border-bottom: 2px solid #3a5a40; /* Subtle border to separate header */
+}
+
+header h1 {
+  font-size: 2.5rem;          /* Big title */
+  margin: 0;                  /* Remove margin */
+}
+
+header p {
+  font-size: 1rem;            /* Smaller paragraph text */
+  color: #a3b97b;             /* Slightly muted text color */
+}
+
+/* Link Styling */
+a {
+  color: #bd9764;             /* Custom link color */
+  text-decoration: none;      /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main content styling */
+main {
+  padding: 1rem;              /* Padding around main content */
+  max-width: 800px;           /* Limit the width for better readability */
+  margin: auto;               /* Center the content within the page */
+}
+
+/* Footer Styling */
+footer {
+  padding: 1rem;
+  border-top: 2px solid #3a5a40; /* Subtle border for separation */
+  text-align: center;            /* Center the text in the footer */
+  font-size: 0.9rem;             /* Smaller footer text */
+  color: #a3b97b;                /* Muted footer text */
+}
+
+/* Lists */
+ul {
+  list-style-type: none;      /* Remove bullet points */
+  padding-left: 0;            /* Remove left padding */
+  margin: 0;                  /* Remove any default margin */
+}
+
+ul li {
+  padding: 0.8rem;            /* Padding inside list items */
+  margin-bottom: 0.5rem;      /* Space between list items */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+ul li:hover {
+  transform: scale(1.05);      /* Increase size on hover */
+}
+
+/* Styling for anchor links within the list items */
+ul li a {
+  color: #bd9764;             /* Custom link color */
+  font-weight: bold;          /* Make the link text bold */
+  text-decoration: none;      /* Remove default underline */
+  display: block;             /* Make the whole list item clickable */
+}
+
+ul li a:hover {
+  color: #fff;                /* Change link color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
